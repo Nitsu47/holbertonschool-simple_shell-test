@@ -8,12 +8,12 @@
 
 unsigned int _strlen(char *s)
 {
-		unsigned int len = 0;
+	unsigned int len = 0;
 
-		while (s[len])
+	while (s[len])
 		len++;
 
-		return (len);
+	return (len);
 }
 
 /**
@@ -25,8 +25,9 @@ void print_env(void)
 	char **env = environ;
 
 	while (*env)
+	
 	{		
-	printf("%s\n", *env++);
+		printf("%s\n", *env++);
 	}
 }
 
