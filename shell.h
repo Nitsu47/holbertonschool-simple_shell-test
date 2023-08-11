@@ -11,5 +11,6 @@
 
 /**
 * prototypes */
-
+unsigned int _strlen(char *s);
+void print_env(void);
 #endif
