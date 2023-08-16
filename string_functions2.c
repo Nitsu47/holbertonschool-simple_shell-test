@@ -1,13 +1,10 @@
 #include "shell.h"
-
 /**
 * _getPATH - A function to gets the full value from
 * enviromental variable PATH
 * @env: The pointer to enviromental variables
 * Return: All tokenized pathways for commands
 **/
-
-
 char **_getPATH(char **env)
 {
 		char *pathvalue = NULL, **pathways = NULL;
@@ -27,4 +24,3 @@ char **_getPATH(char **env)
 		}
 		return (NULL);
 }
-
