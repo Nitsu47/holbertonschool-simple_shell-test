@@ -4,7 +4,7 @@
  *
  *
  */
- int main(void)
+ int getppid(void)
  {
     pid_t myppid;
 

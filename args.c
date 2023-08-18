@@ -5,7 +5,7 @@
  * @av: array of strings
  * Return: arguments 
  */
-int main(int ac, char **av)
+int args(int ac, char **av)
 {
     int count = 0;
 

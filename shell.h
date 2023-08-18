@@ -15,4 +15,8 @@ unsigned int _strlen(char *s);
 void print_env(void);
 int _strcmp(char *s1, char *s2);
 char **tokenize(char *buffer, const char *x);
+char *_strcpy(char *dest, char *src);
+int fork(int argc, char *argv);
+int forki(void);
+
 #endif

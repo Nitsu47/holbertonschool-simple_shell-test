@@ -5,7 +5,7 @@
 * main - divide an array in tokens(arguments).
 * Return: an array with each argument in the line.
 */
-int main(void)
+int _strtok(void)
 {
     char *buffer = malloc(1024);
     char *token;

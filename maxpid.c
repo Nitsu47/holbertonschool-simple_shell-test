@@ -4,7 +4,7 @@
  *
  *
  */
- int main()
+ int maxpid()
  {
     pid_t maxpid = (1 << 16) - 1;
     printf("%u\n", maxpid);

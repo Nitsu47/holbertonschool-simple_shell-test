@@ -1,12 +1,10 @@
 #include "shell.h"
-
 /**
 * tokenize - Splits a string
 * @buffer:the pointer to input string
 * @x: the delimiter for strtok
 * Return: A pointer to an array of tokens.
  **/
-
 char **tokenize(char *buffer, const char *x)
 {
 	char *token = NULL, **commands = NULL;
@@ -22,7 +20,7 @@ char **tokenize(char *buffer, const char *x)
 	{
 		perror("Unable to allocate buffer");
 		free(buffer);
-		free_dp(commands);
+		free(commands);
 		exit(EXIT_FAILURE);
 	}
 
@@ -33,7 +31,7 @@ char **tokenize(char *buffer, const char *x)
 		if (commands[i] == NULL)
 		{
 			perror("Unable to allocate buffer");
-			free_dp(commands);
+			free(commands);
 			return (NULL);
 		}
 		_strcpy(commands[i], token);

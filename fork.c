@@ -1,12 +1,9 @@
-#include <stdio.h>
-#include <stdlib.c>
-#include <unistd.h>
-#include <string.h>
+#include "shell.h"
 /**
 * main - forks theinput given.
 * 
 */
-int main(int argc, char *argv)
+int fork()
 {
     pid_t mypid = getpid();
     pid_t pid;

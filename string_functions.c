@@ -31,7 +31,6 @@ void print_env(void)
 	}
 }
 
-
 /**
 * _strcmp - Function compares two strings
 * @s1: first string
@@ -50,4 +49,21 @@ int _strcmp(char *s1, char *s2)
 			i++;
 		}
 		return (1);
+}
+
+/**
+* _strcpy - Function copies a string to another string
+* @dest: The pointer to the copyed string
+* @src: The pointer to string to copy for
+* Return: A pointer to copied string
+**/
+
+char *_strcpy(char *dest, char *src)
+{
+        char *aux = dest;
+
+        while (*src)
+        *dest++ = *src++;
+        *dest = '\0';
+        return (aux);
 }
