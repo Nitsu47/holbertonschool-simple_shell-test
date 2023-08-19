@@ -117,15 +117,31 @@ Simple shell 0.4 +
 </details>
 
 ## Files
-1. []()
-2. []()
-3. []()
-4. []()
-5. []()
+1. [shell.c](#shell.c)
+2. [shell.h](#shell.h)
+3. [_execve.c](#_execve.c)
+4. [string_functions.c](#string_functions.c)
+5. [auxiliar_functions.c](#auxiliar_functions.c)
+
+<a name="shell.c"></a>
+<h3><a href="https://github.com/Nitsu47/holbertonschool-simple_shell/blob/main/shell.c">shell.c</a></h3>
+Main code of the shell project, .
+<a name="shell.h"></a>
+<h3><a href="https://github.com/Nitsu47/holbertonschool-simple_shell/blob/master/shell.h">shell.h</a></h3>
+Contains the libraries, prototypes and headers macros needed for the files.
+<a name="_execve.c"></a>
+<h3><a href="https://github.com/Nitsu47/holbertonschool-simple_shell/blob/master/_execve.c">_execve.c</a></h3>
+<a name="string_functions.c"></a>
+<h3><a href="https://github.com/Nitsu47/holbertonschool-simple_shell/blob/master/string_functions.c">string_functions.c</a></h3>
+
+<a name="auxiliar_functions.c"></a>
+<h3><a href="https://github.com/Nitsu47/holbertonschool-simple_shell/blob/master/auxiliar_functions.c">auxiliar_functions.c</a></h3>
+contains 3 needed functions, "tokenize"(that splits a string), "eof"(checks if buffer is end od the line) and "strtok"(divide an array in tokens(arguments))
+
 
 <details><summary><h2>Usage</h2></summary>
 <details><summary><h3>Flowchart</h3></summary>
- 
+ ![Shell flow drawio](https://github.com/Nitsu47/holbertonschool-simple_shell-test/assets/135637506/448e3510-25ad-4a6c-b1ba-78e0e7e7ef7e)
 </details>
 <h3></h3>
  
@@ -155,6 +171,6 @@ Simple shell 0.4 +
 
 <br>
 
-Last updated: August 6, 2023
+Last updated: August 19, 2023
 
 </div>
