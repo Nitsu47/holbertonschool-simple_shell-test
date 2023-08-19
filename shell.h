@@ -17,4 +17,5 @@ int _strcmp(char *s1, char *s2);
 char **tokenize(char *buffer, const char *x);
 char *_strcpy(char *dest, char *src);
 int fork2(void);
+int exec(char **args);
 #endif
