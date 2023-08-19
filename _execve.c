@@ -1,29 +1,32 @@
 #include "shell.h"
 /**
 * _execve - executes commands passed.
-* @command: first token of a line taken as command.
-* @line: line with all arguments.
-* @numline: number in the line pisition.
-* @linecp: copy of the line to not change original line.
-* @tok: tokens with every argument passed.
-* @args: arguments tokenized.
-* @count: counter to iterate
 */
-int _execve(char *command, char *line)
+}int exec(char **args)
 {
-    unsigned long int numline;
-    char linecp, *newcommand, *tok, *args;
-    int count;
+	pid_t pid;
+    	int status;
 
-    _strcpy(linecp, line);
-    tok = strtok(linecp, "\n");
-    newcommand = strtok(tok, " ");
+        	pid = fork();
+            	if (pid == 0)
+                	{
+                    		if (execvp(args[0], args) == -1)
+                            		{
+                                    			perror("Execution error");
+                                                			return (-1);
+                                                            		}
+                                                                    	}
+                                                                        	else if (pid < 0)
+                                                                            	{
+                                                                                		perror("Fork error");
+                                                                                        		return (-1);
+                                                                                                	}
+                                                                                                    	else
+                                                                                                        	{
+                                                                                                            		do {
+                                                                                                                    			waitpid(pid, &status, WUNTRACED);
+                                                                                                                                		} while (!WIFEXITED(status));
+                                                                                                                                        	}
 
-    arg[0] = command;
-    while (newcommand != NULL)
-    {
-        newcommand = strtok(NULL, " ");
-        args[count] = newcommand;
-        count++;
-    }
-}
+                                                                                                                                            return (1);
+                                                                                                                                            }
