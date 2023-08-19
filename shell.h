@@ -11,11 +11,18 @@
 
 /**
 * prototypes */
+int exec(char **args);
+int _strtok(void);
+char **tokenize(char *buffer, const char *x);
+void _EOF(char **buffer);
+int fork2(void);
+char **_getPATH(char **env);
+int getppid(void);
+int maxpid();
+int pid(void);
 unsigned int _strlen(char *s);
 void print_env(void);
 int _strcmp(char *s1, char *s2);
-char **tokenize(char *buffer, const char *x);
 char *_strcpy(char *dest, char *src);
-int fork2(void);
-int exec(char **args);
+char **tokenize(char *buffer, const char *x);
 #endif
