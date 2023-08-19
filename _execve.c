@@ -12,7 +12,7 @@ int exec(char **args)
             	if (pid == 0)
                 	{
         if (execvp(args[0], args) == -1)
-                            		{
+        {
         perror("Execution error");
         return (-1);
         }
