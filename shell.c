@@ -3,7 +3,7 @@
 * main - Shell core
 * Return: 
 */
-int main()
+int exec(char **args)
 {
 char *command = NULL;
     size_t len = 1024;
@@ -14,10 +14,9 @@ char *command = NULL;
         printf("$ ");
         fflush(stdout);
         read = getline(&command, &len, stdin);
-        prompt(buffer, readed);
         if (read == -1)
         {
-            if (feof(stdin))
+            if (eof(stdin))
                 break;
             perror("Error");
             break;
